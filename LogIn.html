@@ -5,33 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login_page.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
 </head>
 <body>
-    <div class="container">
-        <div class="left"></div>
-        <div class="right">
-            <h1>Welcome to Rentify</h1>
-        <div class="textboxes">
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo"><i class='bx bx-home'></i>Rentify</a>
             
-            <input type="text" name="email" placeholder="Enter your Name" class="text">
-            <div class="pass-container">
+            
+            <a href="SignIn.html" class="btn">Sign Up</a>
+        </div>
+    </header>
+    <!-- login page -->
+     <div class="login container">
+        <div class="login-container">
+            <h2>Login To  Continue</h2>
+            <p>Log in with your data that you entered <br>during your registration</p>
+            <!-- login form -->
+             <form action="">
+                <span>Enter your email address</span>
+                <input type="email" name="" id="" placeholder="youremail@gmail.com" required>
+                <span>Enter your password</span>
+                <input type="password" name="" id="" placeholder="password" required>
+                <input type="submit" value="Log In" class="button">
+                <a href="#">Forget Password</a>
+             </form>
+             <a href="SignIn.html" class="btn">Sign Up now</a>
+        </div>
+        <!-- login image -->
+         <div class="login-image">
+            <img src="img/login.png" alt="">
+         </div>
+     </div>
 
-                <input type="password" id="password" name="pass" placeholder="Enter your Password" class="pass">
-                <img id="show" src="/img/eye-solid.svg" alt="">
+    <!--foot-->
+    <section class="foot">
+        <div class="foot-container container">
+            <h2>House Rent</h2>
+            <div class="foot-box">
+                <h3>Quick Links</h3>
+                <a href="#">Agency</a>
+                <a href="#">Buliding</a>
+                <a href="#">Rates</a>
+            </div>
+            <div class="foot-box">
+                <h3>Locations</h3>
+                <a href="#">Brirmingham</a>
+                <a href="#">London</a>
+                <a href="#">Switzerland</a>
+            </div>
+            <div class="foot-box">
+                <h3>Contants</h3>
+                <a href="#">+91 (0)9876543210</a>
+                <a href="#">youremail@gmail.com</a>
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                </div>
             </div>
         </div>
-            
-            <div class="btn">
-                <button class="lin" >Login</button>
-                <button>Create a proflie</button>
+    </section>
+    <!-- copyrights -->
+     <div class="copyright">
+        <p>&#169; Rentify All Right Reserverd</p>
+     </div>
 
-            </div>
-        </div>
-    </div>
-    <script src="pass_show.js"></script>
 </body>
 </html>
